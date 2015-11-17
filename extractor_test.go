@@ -7,7 +7,7 @@ import (
 
 func Benchmark_Extractor(b *testing.B) {
 	b.StopTimer()
-	f, _ := ioutil.ReadFile("./test.html")
+	f, _ := ioutil.ReadFile("./test")
 	html := string(f)
 	b.StartTimer()
 	for i := 0; i < b.N; i++ {
